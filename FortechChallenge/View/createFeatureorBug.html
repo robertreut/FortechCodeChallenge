@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="createFeatureorBug.js" type="module"></script>
+    <title>Project management tool</title>
+</head>
+<body>
+<h1>Create feature/bug</h1>
+<form id="Name">Name:
+    <input type="text" name="Name">
+</form>
+<form id="Type">
+    <input type="radio" id="feature" name="type" value="feature" checked>Feature <br>
+    <input type="radio" id="bug" name="type" value="bug"> Bug<br>
+</form>
+<form id="Sprint">Sprint(insert sprint id):
+    <input type="text" name="Sprint">
+</form>
+<form id="Assignee">Assignee:
+    <input type="text" name="Assignee">
+</form>
+<form id="Description">Description:
+    <input type="text" name="Description">
+</form>
+<form id="Tasks">Tasks(insert task id's separated by comma):
+    <input type="text" name="Tasks">
+</form>
+<button id="create">
+    Create
+</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="updateIssue.js" type="module"></script>
+    <title>Project management tool</title>
+</head>
+<body>
+<h1>Update Issue</h1>
+<a>(Updates will take place only if provided changes are given in a good format)</a>
+<form id="Id">Updated issue id:
+    <input type="text" name="Id">
+</form>
+<form id="Name">Name:
+    <input type="text" name="Name">
+</form>
+<form id="Sprint">Sprint(insert sprint id, be careful to not make a task have a different sprint than it's issue):
+    <input type="text" name="Sprint">
+</form>
+<form id="Assignee">Assignee:
+    <input type="text" name="Assignee">
+</form>
+<form id="Description">Description:
+    <input type="text" name="Description">
+</form>
+<form id="Status">Status:
+    <input type="radio" id="InProgress" name="status" value="2" checked>In Progress <br>
+    <input type="radio" id="Feedback" name="status" value="3"> Feedback<br>
+    <input type="radio" id="Rework" name="status" value="4" checked>Rework <br>
+    <input type="radio" id="Resolved" name="status" value="5"> Resolved<br>
+</form>
+<form id="Tasks">Tasks(update subtasks or parent issue only):
+    <input type="text" name="Tasks">
+</form>
+<form id="Comment">Add Comment:
+    <input type="text" name="Comment">
+</form>
+<button id="create">
+    Create
+</button>
+</body>
+</html>
